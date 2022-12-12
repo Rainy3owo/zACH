@@ -1,0 +1,112 @@
+﻿<Window x:Class="WpfApp1.Экскурсионные_агенства"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Экскурсионные_агенства" Height="450" Width="800">
+    <Grid>
+        <FlowDocumentReader>
+            <FlowDocument>
+
+                <Table CellSpacing="5">
+
+                    <Table.Columns>
+                        <TableColumn/>
+                        <TableColumn/>
+                        <TableColumn/>
+                        <TableColumn/>
+                    </Table.Columns>
+
+                    <TableRowGroup>
+
+                        <!-- Title row for the table. -->
+                        <TableRow Background="SkyBlue">
+                            <TableCell ColumnSpan="4" TextAlignment="Center">
+                                <Paragraph FontSize="24pt" FontWeight="Bold">Экскурсионные агенства</Paragraph>
+                            </TableCell>
+                        </TableRow>
+
+                        <!-- Header row for the table. -->
+                        <TableRow Background="MediumSeaGreen">
+                            <TableCell>
+                                <Paragraph FontSize="14pt" FontWeight="Bold">наименование агенств</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph FontSize="14pt" FontWeight="Bold">стоимости экскурсии у агенств</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph FontSize="14pt" FontWeight="Bold">дата проведения экскурсии</Paragraph>
+                            </TableCell>
+                        </TableRow>
+
+
+
+                        <!-- Four data rows for the inner planets. -->
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>Трип</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>15000</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>05.06.22</Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow Background="lightgray">
+                            <TableCell>
+                                <Paragraph>Тревел</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>9000</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>08.06.22</Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>ХэппиТревел</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>5500</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>09.06.22</Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow Background="lightgray">
+                            <TableCell>
+                                <Paragraph>Трип</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>20000</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>07.06.22</Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>Тревел</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>3900</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>01.07.22</Paragraph>
+                            </TableCell>
+                        </TableRow>
+
+
+
+
+                    </TableRowGroup>
+                </Table>
+            </FlowDocument>
+        </FlowDocumentReader>
+        <Button Content="Закрыть" HorizontalAlignment="Left" Height="28" Margin="631,10,0,0" VerticalAlignment="Top" Width="159" Click="Button_Click"/>
+    </Grid>
+</Window>

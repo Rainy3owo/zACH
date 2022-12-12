@@ -1,0 +1,100 @@
+﻿<Window x:Class="WpfApp1.Расходы"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Расходы" Height="450" Width="800">
+    <Grid>
+        <FlowDocumentReader>
+            <FlowDocument>
+
+                <Table CellSpacing="12">
+
+                    <Table.Columns>
+                        <TableColumn/>
+                        <TableColumn/>
+                        <TableColumn/>
+                        <TableColumn/>
+                    </Table.Columns>
+
+                    <TableRowGroup>
+
+                        <!-- Title row for the table. -->
+                        <TableRow Background="SkyBlue">
+                            <TableCell ColumnSpan="2" TextAlignment="Center">
+                                <Paragraph FontSize="24pt" FontWeight="Bold">Расходы</Paragraph>
+                            </TableCell>
+                        </TableRow>
+
+                        <!-- Header row for the table. -->
+                        <TableRow Background="Moccasin">
+                            <TableCell>
+                                <Paragraph FontSize="14pt" FontWeight="Bold">Сумма дохода</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph FontSize="14pt" FontWeight="Bold">Даты поступления расхода</Paragraph>
+                            </TableCell>
+                        </TableRow>
+
+
+
+                        <!-- Four data rows for the inner planets. -->
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>50000</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>15.12.22</Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow Background="lightgray">
+                            <TableCell>
+                                <Paragraph>60000</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>15.10.22</Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>300000
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>15.08.22</Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow Background="lightgray">
+
+                            <TableCell>
+                                <Paragraph>150000</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>15.06.22</Paragraph>
+                            </TableCell>
+                        </TableRow>
+
+
+
+
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>59000</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>15.03.22</Paragraph>
+                            </TableCell>
+                        </TableRow>
+
+
+
+
+                    </TableRowGroup>
+                </Table>
+            </FlowDocument>
+        </FlowDocumentReader>
+        <Button Content="Закрыть" HorizontalAlignment="Left" Height="28" Margin="631,10,0,0" VerticalAlignment="Top" Width="159" Click="Button_Click"/>
+    </Grid>
+</Window>
